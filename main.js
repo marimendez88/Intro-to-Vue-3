@@ -13,7 +13,8 @@ const app = Vue.createApp({
       product: 'Socks',
       description: 'Socks in different colors',
       image: './assets/images/socks_green.jpg',
-      url: 'https://www.mtekh.com/'
+      url: 'https://www.mtekh.com/',
+      inStock : true,
     }
   }
 })
