@@ -8,13 +8,15 @@
 }) */
 
 const app = Vue.createApp({
-  data(){
-    return {
-      product: 'Socks',
-      description: 'Socks in different colors',
-      image: './assets/images/socks_green.jpg',
-      url: 'https://www.mtekh.com/',
-      inStock : true,
+    data() {
+        return {
+            cart: [],
+            premium: true
+        }
+    },
+    methods: {
+        updateCart(id) {
+            this.cart.push(id)
+        }
     }
-  }
 })
